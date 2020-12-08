@@ -30,7 +30,7 @@ module.exports = {
   jwt: {
     secret: process.env.JWT_SECRET,
     expiresIn: process.env.JWT_DURATION || "1h",
-    algorithm: ["HS256"],
+    algorithms: ["HS256"],
     exclude:{
       path: [
         {
@@ -39,5 +39,5 @@ module.exports = {
         },
       ],
     },
-  }
+  },
 };
